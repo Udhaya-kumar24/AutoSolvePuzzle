@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Puzzle Game</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.jpeg">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-slim.js"></script>
+    <script src="./assets/js/lib.js" defer></script>
+    <script src="./assets/js/hammer.min.js" defer></script>
+    <script src="./assets/js/NPuzzleSolver.js" defer></script>
+    <script src="./assets/js/Game.js" defer></script>
+    <script src="./assets/js/Cell.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 col-lg-3 min-vh-50 max-vh-75" id="details" >
+                </div>
+                <div class="col-12 col-lg-9 min-vh-50 max-vh-75">
+                    <div class="row" id="header">
+                        <div class="col-12" id="guide">
+                            <h3 class="heading">Puzzle Game</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div id="content">
+                                <!--#this is where you place the contents of your web page-->
+                                <div class="controls">
+                                    <div class="controls__game none">
+                                        <button id="level" title="Levels list">Levels</button>
+                                        <button id="solve" disabled title="Can not solve for now">Solve</button>
+                                    </div>
+                                </div>
+                                <div class="board board_tile_choose">
+                                </div>
+                                <div class="game-stats hidden">
+                                    <div class="game-stats__moves">
+                                        Moves:
+                                        <span class="game-stats__moves--value">0</span>
+                                    </div>
+                                    <div class="game-stats__local">
+                                        <span class="game-stats__local--level">3x3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="popupSolve"></div>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
